@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hurones</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hurones</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <header> <h1>Nuestros distintos Hurones 🦦</h1> </header>
-   <section>
-        <p>Si te interesa adoptar un hurón, aquí encontrarás información sobre nuestros hurones disponibles para adopción.
-            ¡Dale clic a la imagen para adoptar!
-        </p>
-    </section>
 
-    <main>
-        <a href="formulario.html">  
-        <img src="imagenes/jinnie.png" alt="Huron Jinnie" width="300"/>
-        </a>    
-        <h2>Jinnie</h2>
-              
-        <details> 
-            <summary> Información de Jinnie </summary>
-                <ul>
-                    <li>Color: Blanco</li>
-                    <li>Edad: 3 meses</li>
-                    <li>Personalidad: Curiosa</li>
-                    <li>Género: Hembra </li>
-                </ul>
-             </details>
-    </main>
+ <header class="header">
+  <div class="header-left">
+    <a href="index.html"><img src="imagenes/byulkilogo.png" class="logo"></a>
+  </div>
 
-    
+  <h1>Byulki Adopciones</h1>
 
-     <section>
-    <h2>¿No estas convencido sobre adoptar un hurón?</h2>
-    <p><a href="index.html">¡Revisa a nuestros otros animalitos!</a></p>
+  <div class="header-right">
+   <a href="carrito.html"><img src="imagenes/garrito.png" class="cart-icon"></a>
+    <span class="contador" id="contador">0</span>
+  </div>
+</header>
 
-    </section>
+<main>
 
-    
-    
-      <footer>
-        <p>Adopciones sk8. Desde 2018 conectando corazones.</p>
-        <p>Contacto:</p>
-        <p>correo: skz@adopciones.com</p>
-        <p>teléfono: +52 253 208 0225</p>
+  <section class="animal">
 
-    </footer>
-    
+    <a href="formulario.html">
+      <img src="imagenes/jinnie.png" alt="Cachorro San Bernardo" width="300">
+    </a>
+    <h2>Jinnie</h2>
 
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Huron blanco</li>
+        <li>Edad: 3 meses</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Macho</li>
+      </ul>
+
+   <button class="btnCarrito"
+  data-nombre="Jinnie"
+  data-raza="Huron blanco"
+  data-edad="3 meses"
+  data-imagen="imagenes/Jinnie.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+</main>
+
+<section>
+  <h2>¿No estás convencido sobre adoptar un huron?</h2>
+  <p><a href="index.html">¡Revisa a nuestros otros animalitos!</a></p>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="index.html">
+      <img src="imagenes/byulkilogo.png" alt="Logo" class="logo">
+    </a>
+
+    <h2 class="site-name">Byulki Adopciones</h2>
+
+    <a href="carrito.html">
+      <img src="imagenes/garrito.png" alt="Carrito" class="cart-icon">
+    </a>
+  </div>
+
+  <p class="footer-slogan">Desde 2025 conectando corazones.</p>
+
+  <div class="footer-contact">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong> byulki@adopciones.com</p>
+    <p><strong>Teléfono:</strong> +52 080 307 0425</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
