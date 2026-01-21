@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Adopción</title>
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
     </header>
 
     <main>
-        <form action="gracias.html" method="get">
+        <form id="formAdopcion" action="gracias.html" method="get">
 
             <label for="nombre">Nombre Completo:</label><br>
             <input type="text" id="nombre" name="nombre" required>
@@ -45,14 +46,29 @@
      <p><a href="index.html">Regresar a la página principal</a></p>
     </section>
 
-    
-      <footer>
-        <p>Adopciones sk8. Desde 2018 conectando corazones.</p>
-        <p>Contacto:</p>
-        <p>correo: skz@adopciones.com</p>
-        <p>teléfono: +52 253 208 0225</p>
+     
+    <footer class="footer">
+  <div class="footer-top">
+   <a href="index.html">
+     <img src="imagenes/byulkilogo.png" alt="Logo" class="logo">
+     </a>
 
-    </footer>
+    <h2 class="site-name">Byulki Adopciones</h2>
+
+   <a href="carrito.html"><img src="imagenes/garrito.png" alt="Carrito" class="cart-icon"></a>
+  </div>
+
+  <p class="footer-slogan">
+    Desde 2025 conectando corazones.
+  </p>
+
+  <div class="footer-contact">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong> byulki@adopciones.com</p>
+    <p><strong>Teléfono:</strong> +52 080 307 0425</p>
+  </div>
+</footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
