@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de adopción</title>  
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+ <header class="header">
+  <div class="header-left">
+   <a href="index.html"><img src="imagenes/byulkilogo.png" class="logo"></a>
+  </div>
+
+  <h1>Byulki Adopciones</h1>
+
+  <div class="header-right">
+     <a href="carrito.html"><img src="imagenes/garrito.png" alt="Carrito" class="cart-icon"></a>
+    <span class="contador" id="contador">0</span>
+  </div>
+</header>
+
+<div class="info-carrito">
+  <h2>ℹ️ Información</h2>
+  <p>
+    Este no es un carrito convencional de compra. 
+    Al agregar un animalito al carrito, estás indicando tu interés en adoptarlo. 
+    En Byulki Adopciones, cada animalito es único y especial, y no tienen un precio asociado. 
+    NO promovemos la compra y venta de mascotas; nuestro objetivo es conectar corazones y encontrar hogares amorosos para cada uno de ellos.
+  </p>
+</div>
+
+
+<main>
+  <section id="itemsCarrito" class="carrito"></section>
+
+  <div class="acciones">
+    <button id="vaciarCarrito">Vaciar carrito</button>
+    <a href="index.html" class="volver">Seguir viendo animalitos</a>
+  </div>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const itemsCarrito = document.getElementById("itemsCarrito");
+  const contador = document.getElementById("contador");
+  const btnVaciar = document.getElementById("vaciarCarrito");
+
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  contador.textContent = carrito.length;
+
+  if (carrito.length === 0) {
+    itemsCarrito.innerHTML = "<p class='vacio'>No hay animalitos en el carrito 🐶</p>";
+  } else {
+    carrito.forEach(animal => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      card.innerHTML = `
+        <img src="${animal.imagen}" alt="${animal.nombre}">
+        <h3>${animal.nombre}</h3>
+        <p><strong>Raza:</strong> ${animal.raza}</p>
+        <p><strong>Edad:</strong> ${animal.edad}</p>
+      `;
+
+      itemsCarrito.appendChild(card);
+    });
+  }
+
+  btnVaciar.addEventListener("click", () => {
+    localStorage.removeItem("carrito");
+    itemsCarrito.innerHTML = "<p class='vacio'>Carrito vacío 🐾</p>";
+    contador.textContent = "0";
+  });
+
+});
+</script>
+
+ <footer class="footer">
+  <div class="footer-top">
+   <a href="index.html">
+     <img src="imagenes/byulkilogo.png" alt="Logo" class="logo">
+     </a>
+
+    <h2 class="site-name">Byulki Adopciones</h2>
+
+   <a href="carrito.html"><img src="imagenes/garrito.png" alt="Carrito" class="cart-icon"></a>
+  </div>
+
+  <p class="footer-slogan">
+    Desde 2025 conectando corazones.
+  </p>
+
+  <div class="footer-contact">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong> byulki@adopciones.com</p>
+    <p><strong>Teléfono:</strong> +52 080 307 0425</p>
+  </div>
+</footer>
+
+</body>
+</html>
