@@ -1,0 +1,182 @@
+/* =====================
+   ESTILOS GENERALES
+===================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eaf7f9;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #2c7be5, #3ad29f);
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+.site-name,
+.header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+/* CARRITO A LA DERECHA */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-icon {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.contador {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* =====================
+   MAIN / CARRITO
+===================== */
+
+main {
+  padding: 30px;
+}
+
+.carrito {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* =====================
+   TARJETAS
+===================== */
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 120, 180, 0.15);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #2c7be5;
+}
+
+.card p {
+  color: #2f8f83;
+}
+
+/* =====================
+   ESTADO VACÍO
+===================== */
+
+.vacio {
+  text-align: center;
+  font-size: 18px;
+  color: #2f8f83;
+}
+
+/* =====================
+   ACCIONES
+===================== */
+
+.acciones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background: #2c7be5;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1a5fc2;
+}
+
+.volver {
+  text-decoration: none;
+  background: #3ad29f;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.volver:hover {
+  background: #2bbd8a;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.footer {
+  background: linear-gradient(90deg, #2c7be5, #3ad29f);
+  padding: 25px 30px;
+  color: white;
+  text-align: center;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-slogan {
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.footer-contact h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+  font-size: 14px;
+}
