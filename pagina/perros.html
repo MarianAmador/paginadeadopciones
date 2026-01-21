@@ -1,42 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perros</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header> <h1>Nuestros dinstintos Perros 🐕</h1> </header>
 
-      <main>
-              <a href="formulario.html">  
-                <img src="imagenes/beth.png" alt="Perro Beth" width="300"/></a>
-        <h2>Beth</h2>
+ <header class="header">
+  <div class="header-left">
+   <a href="index.html"><img src="imagenes/byulkilogo.png" class="logo"></a>
+  </div>
 
-        <details> 
-            <summary> Información de Beth </summary>
-                <ul>
-                    <li>Raza: San Bernardo</li>
-                    <li>Edad: 3 meses</li>
-                </ul>
-             </details>
-    </main>
+  <h1>Byulki Adopciones</h1>
+
+  <div class="header-right">
+   <a href="carrito.html"><img src="imagenes/garrito.png" class="cart-icon"></a>
+    <span class="contador" id="contador">0</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/beth.png" alt="Cachorro San Bernardo" width="300">
+    </a>
+    <h2>Beth</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: San Bernardo</li>
+        <li>Edad: 3 meses</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Macho</li>
+      </ul>
+
+   <button class="btnCarrito"
+  data-nombre="Beth"
+  data-raza="San Bernardo"
+  data-edad="3 meses"
+  data-imagen="imagenes/beth.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
 
 
-     <section>
-    <h2>¿No estas convencido sobre adoptar un perro?</h2>
-    <p><a href="index.html">¡Revisa a nuestros otros animalitos!</a></p>
-    </section>
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/Berry.png" alt="Perro Cavalier" width="300">
+    </a>
+    <h2>Berry</h2>
 
-    
-      <footer>
-        <p>Adopciones sk8. Desde 2018 conectando corazones.</p>
-        <p>Contacto:</p>
-        <p>correo: skz@adopciones.com</p>
-        <p>teléfono: +52 253 208 0225</p>
+    <button class="btnInfo">Ver información</button>
 
-    </footer>
-    
-    
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Cavalier King Charles Spaniel</li>
+        <li>Edad: 2 años</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Hembra</li>
+      </ul>
+
+      
+   <button class="btnCarrito"
+  data-nombre="Berry"
+  data-raza="Cavalier King Charles Spaniel"
+  data-edad="2 años"
+  data-imagen="imagenes/Berry.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/Kkami.png" alt="Perro Chihuahua" width="300">
+    </a>
+    <h2>Kkami</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Chihuahua de pelo largo</li>
+        <li>Edad: 3 años</li>
+        <li>Personalidad: Seria</li>
+        <li>Género: Macho</li>
+      </ul>
+
+      
+   <button class="btnCarrito"
+  data-nombre="Kkami"
+  data-raza="Chihuahua de pelo largo"
+  data-edad="3 años"
+  data-imagen="imagenes/Kkami.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/scooby.png" alt="Gran Danés" width="300">
+    </a>
+    <h2>Scooby</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Gran Danés</li>
+        <li>Edad: 6 meses</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Macho</li>
+      </ul>
+
+      
+   <button class="btnCarrito"
+  data-nombre="Scooby"
+  data-raza="Gran Danés"
+  data-edad="6 meses"
+  data-imagen="imagenes/scooby.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/Rocket.png" alt="Perro Rocket" width="300">
+    </a>
+    <h2>Rocket</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Perro café</li>
+        <li>Edad: 1 año</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Macho</li>
+      </ul>
+      
+   <button class="btnCarrito"
+  data-nombre="Rocket"
+  data-raza="Perro café"
+  data-edad="1 año"
+  data-imagen="imagenes/Rocket.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+</main>
+
+<section>
+  <h2>¿No estás convencido sobre adoptar un perro?</h2>
+  <p><a href="index.html">¡Revisa a nuestros otros animalitos!</a></p>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="index.html">
+      <img src="imagenes/byulkilogo.png" alt="Logo" class="logo">
+    </a>
+
+    <h2 class="site-name">Byulki Adopciones</h2>
+
+    <a href="carrito.html">
+      <img src="imagenes/garrito.png" alt="Carrito" class="cart-icon">
+    </a>
+  </div>
+
+  <p class="footer-slogan">Desde 2025 conectando corazones.</p>
+
+  <div class="footer-contact">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong> byulki@adopciones.com</p>
+    <p><strong>Teléfono:</strong> +52 080 307 0425</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
