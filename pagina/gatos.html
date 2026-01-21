@@ -1,46 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gatos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Nuestros distintos Gatos 🐱</h1>
-    </header>
 
-      <main>
-          <a href="formulario.html">     
-        <img src="imagenes/naranja.png" alt="Gato Naranjita" width="300"/>
-          </a>
+ <header class="header">
+  <div class="header-left">
+   <a href="index.html"><img src="imagenes/byulkilogo.png" class="logo"></a>
+  </div>
 
-        <h2>Naranjita</h2>
-        <details> 
-            <summary> Información de Naranjita </summary>
-                <ul>
-                    <li>Color: Naranja</li>
-                    <li>Edad: 1 año</li>
-                    <li>Personalidad: Juguetón</li>
-                    <li>Género: Macho</li>
-                </ul>
-             </details>
-        </main>
-    
+  <h1>Byulki Adopciones</h1>
 
-     <section>
-        <h2>¿No estas convencido sobre adoptar un gato?</h2>
-        <p><a href="index.html">¡Revisa a nuestros otros animalitos!</a></p>
-    </section>
+  <div class="header-right">
+   <a href="carrito.html"><img src="imagenes/garrito.png" class="cart-icon"></a>
+    <span class="contador" id="contador">0</span>
+  </div>
+</header>
 
-     
-      <footer>
-        <p>Adopciones sk8. Desde 2018 conectando corazones.</p>
-        <p>Contacto:</p>
-        <p>correo: skz@adopciones.com</p>
-        <p>teléfono: +52 253 208 0225</p>
+<main>
 
-    </footer>
-    
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/naranja.png" alt="Gato Naranja" width="300">
+    </a>
+    <h2>Naranjita</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Gato Naranja</li>
+        <li>Edad: 3 meses</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Hembra</li>
+      </ul>
+
+   <button class="btnCarrito"
+  data-nombre="Naranjita"
+  data-raza="Gato Naranja"
+  data-edad="3 meses"
+  data-imagen="imagenes/naranja.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/dori.png" alt="Gato Dori" width="300">
+    </a>
+    <h2>Dori</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Gato Atigrado</li>
+        <li>Edad: 6 años</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Hembra</li>
+      </ul>
+
+      
+   <button class="btnCarrito"
+  data-nombre="Dori"
+  data-raza="Gato Atigrado"
+  data-edad="6 años"
+  data-imagen="imagenes/dori.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/doongie.png" alt="Gato Doongie" width="300">
+    </a>
+    <h2>Doongie</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Gato Naranja</li>
+        <li>Edad: 10 años</li>
+        <li>Personalidad: Seria</li>
+        <li>Género: Macho</li>
+      </ul>
+
+      
+   <button class="btnCarrito"
+  data-nombre="Doongie"
+  data-raza="Gato Naranja"
+  data-edad="10 años"
+  data-imagen="imagenes/doongie.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/soonie.png" alt="Gato Soonie" width="300">
+    </a>
+    <h2>Soonie</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Gato Naranja</li>
+        <li>Edad: 11 años</li>
+        <li>Personalidad: Juguetona</li>
+        <li>Género: Hembra</li>
+      </ul>
+
+      
+   <button class="btnCarrito"
+  data-nombre="Soonie"
+  data-raza="Gato Naranja"
+  data-edad="11 años"
+  data-imagen="imagenes/soonie.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+  <section class="animal">
+    <a href="formulario.html">
+      <img src="imagenes/byulkis.png" alt="Gatas Byul Y Yuki" width="300">
+    </a>
+    <h2>Byul y Yuki</h2>
+
+    <button class="btnInfo">Ver información</button>
+
+    <div class="infoAnimal" style="display: none;">
+      <ul>
+        <li>Raza: Gata Atigrada y Gata blanca </li>
+        <li>Edad: 9 y 10 meses </li>
+        <li>Personalidad: Juguetonas, amorosas, lindas</li>
+        <li>Género: Hembra</li>
+      </ul>
+      
+   <button class="btnCarrito"
+  data-nombre="Byul y Yuki"
+  data-raza="Gata Atigrada y Gata blanca"
+  data-edad="9 y 10 meses"
+  data-imagen="imagenes/byulkis.png">
+  Agregar al carrito
+</button>
+
+    </div>
+  </section>
+
+</main>
+
+<section>
+  <h2>¿No estás convencido sobre adoptar un Gato?</h2>
+  <p><a href="index.html">¡Revisa a nuestros otros animalitos!</a></p>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="index.html">
+      <img src="imagenes/byulkilogo.png" alt="Logo" class="logo">
+    </a>
+
+    <h2 class="site-name">Byulki Adopciones</h2>
+
+    <a href="carrito.html">
+      <img src="imagenes/garrito.png" alt="Carrito" class="cart-icon">
+    </a>
+  </div>
+
+  <p class="footer-slogan">Desde 2025 conectando corazones.</p>
+
+  <div class="footer-contact">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong> byulki@adopciones.com</p>
+    <p><strong>Teléfono:</strong> +52 080 307 0425</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
