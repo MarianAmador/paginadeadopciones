@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* =========================
-     FORMULARIO DE ADOPCIÓN
-  ========================= */
-
+//formulario adopcion
   const form = document.getElementById("formAdopcion");
 
   if (form) {
@@ -18,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const telefono = document.getElementById("telefono").value;
       const motivo = document.getElementById("motivo").value;
 
-      if (!/^\d{10}$/.test(telefono)) {
+      if (!/^\d{10}$/.test(telefono)) { //REGEX para 10 dígitos
         alert("Por favor, ingresa un número de teléfono válido de 10 dígitos.");
         event.preventDefault();
         return;
@@ -32,10 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     INFO DE MASCOTAS
-  ========================= */
 
+ // mascotas
   const botonesInfo = document.querySelectorAll(".btnInfo");
 
   botonesInfo.forEach(boton => {
@@ -52,10 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* =========================
-     CARRITO DE ADOPCIÓN
-  ========================= */
-
+  
+  //carrito
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
   const contador = document.getElementById("contador");
@@ -72,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nombre: boton.dataset.nombre,
         raza: boton.dataset.raza,
         edad: boton.dataset.edad,
-        imagen: boton.dataset.imagen   // ✅ IMAGEN GUARDADA
+        imagen: boton.dataset.imagen   
       };
 
       if (!animal.nombre || !animal.imagen) {
@@ -91,10 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* =========================
-     VACIAR CARRITO
-  ========================= */
 
+  
+  //carrito vaciar
   const btnVaciar = document.getElementById("vaciarCarrito");
   const itemsCarrito = document.getElementById("itemsCarrito");
 
